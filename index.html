@@ -53,7 +53,16 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button button-ef">Заказать услугу</button>
+          <button type="button" class="button button-ef" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close-button" type="button" data-modal-close aria-label="Закрыть окно">
+              <svg class="close-modal" width="30" height="30">
+                <use href="./images/icons/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -112,31 +121,46 @@
           <h2 class="task-list team-plus">Чем мы занимаемся</h2>
           <ul class="list task-title">
             <li class="task-item">
-              <img
-                class="img"
-                src="./images/img_pc.jpg"
-                alt="Работа на ПК"
-                width="371"
-                height="294"
-              />
+              <div class="task-name">
+                <img
+                  class="img"
+                  src="./images/img_pc.jpg"
+                  alt="Работа на ПК"
+                  width="371"
+                  height="294"
+                />
+                <div class="task-container">
+                  <p>ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                </div>
+              </div>
             </li>
             <li class="task-item">
-              <img
-                class="img"
-                src="./images/img_phone.jpg"
-                alt="Работа на телефоне"
-                width="370"
-                height="294"
-              />
+              <div class="task-name">
+                <img
+                  class="img"
+                  src="./images/img_phone.jpg"
+                  alt="Работа на телефоне"
+                  width="370"
+                  height="294"
+                />
+                <div class="task-container">
+                  <p>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                </div>
+              </div>
             </li>
             <li class="task-item">
-              <img
-                class="img"
-                src="./images/img_tab.jpg"
-                alt="Работа на планшете"
-                width="370"
-                height="294"
-              />
+              <div class="task-name">
+                <img
+                  class="img"
+                  src="./images/img_tab.jpg"
+                  alt="Работа на планшете"
+                  width="370"
+                  height="294"
+                />
+                <div class="task-container">
+                  <p>ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -422,5 +446,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
