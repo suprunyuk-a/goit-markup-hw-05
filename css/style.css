@@ -129,6 +129,7 @@ ul {
   position: relative;
   text-decoration: none;
   color: var(--head-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-contact .link {
   padding-top: 30px;
@@ -136,6 +137,7 @@ ul {
 
   text-decoration: none;
   color: var(--title-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-page .link.current {
   color: var(--hover-color);
@@ -165,7 +167,6 @@ ul {
 .footer .link:hover {
   color: var(--hover-color);
   fill: var(--hover-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Эффективные решения*/
@@ -205,7 +206,6 @@ ul {
 .effect .button-ef:hover,
 .effect .button-ef:focus {
   background-color: var(--back-color-button);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Особенности и команда*/
 .cont-feature {
@@ -353,6 +353,7 @@ ul {
   letter-spacing: 0.03em;
   background-color: var(--button-back);
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter .button-filt:hover,
 .filter .button-filt:focus {
@@ -360,7 +361,6 @@ ul {
   box-shadow: 0px 3px 1px var(--shadow-filt01), 0px 1px 2px var(--shadow-filt08),
     0px 2px 2px var(--shadow-filt012);
   color: var(--white-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Работы*/
 .gallery {
@@ -409,11 +409,11 @@ ul {
 }
 .gallery-link {
   display: inline-block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay {
@@ -464,6 +464,7 @@ ul {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-list:not(:last-child) {
   margin-right: 10px;
@@ -474,7 +475,6 @@ ul {
   background-color: var(--hover-color);
   fill: var(--white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-title {
@@ -506,13 +506,13 @@ ul {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   fill: var(--color-icon);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients:hover,
 .link-clients:focus {
   border: 1px solid #2196f3;
   fill: var(--hover-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .content {
@@ -545,13 +545,13 @@ h4 {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--hover-color);
   fill: var(--white-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .task-name {
@@ -570,7 +570,10 @@ h4 {
   color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
-
+.task-text {
+  font-size: 14px;
+  font-weight: 700;
+}
 .item-container {
   position: relative;
   overflow: hidden;
@@ -588,6 +591,7 @@ h4 {
   line-height: 1.55;
   letter-spacing: 0.03em;
   transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thump-gallery {
@@ -597,7 +601,6 @@ h4 {
 .gallery-link:hover .item-thumb,
 .gallery-link:focus .item-thumb {
   transform: translateY(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
